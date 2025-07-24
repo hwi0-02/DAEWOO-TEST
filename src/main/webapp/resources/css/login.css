@@ -1,0 +1,68 @@
+/* 전체 레이아웃 초기화 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: '맑은 고딕', Arial, sans-serif;
+  background: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  background: #fff;
+  padding: 15px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 480px;
+  position: relative;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 240px;      /* 원하는 픽셀 단위로 가로 길이 지정 */
+  max-width: 100%;   /* 화면이 작아지면 100% 이하로 줄어듬 */
+  /* 기존 스타일 유지 */
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border: none;
+  background: #F4F4F4;
+  font-size: 14px;
+
+}
+.login-box {
+  width: 400px;         /* 박스 전체 너비도 적당히 줄여주세요 */
+  padding: 30px 20px;   /* 좌우 패딩 조정 */
+  /* … */
+}
+
+.login-box button {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 105px;
+  height: 111px;
+  background: #E0A400;
+  color: #fff;	
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 15px;
+}
